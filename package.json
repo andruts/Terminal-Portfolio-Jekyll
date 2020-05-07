@@ -1,0 +1,49 @@
+{
+  "name": "andruts.github.io",
+  "version": "1.0.0",
+  "description": "My portfolio hosted in a github pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/webpack --watch | bundle exec jekyll serve --livereload --incremental"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andruts/andruts.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "material",
+    "components",
+    "web",
+    "webpack",
+    "jekyll",
+    "github",
+    "pages"
+  ],
+  "author": "Andres Castellanos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andruts/andruts.github.io/issues"
+  },
+  "homepage": "https://github.com/andruts/andruts.github.io#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "autoprefixer": "^9.7.6",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "extract-loader": "^5.0.1",
+    "file-loader": "^6.0.0",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "material-components-web": "^6.0.0",
+    "stimulus": "^1.1.1"
+  }
+}

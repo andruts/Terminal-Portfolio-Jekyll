@@ -1,0 +1,61 @@
+@use "@material/theme"with ($primary: #1E2C2C,
+    $secondary: #10181D,
+    $on-primary: #FFF,
+    $on-secondary: #66454A,
+);
+
+
+$mdc-typography-styles-headline1: (font-family: unquote("Lato"),
+);
+
+@import '@material/typography/mdc-typography';
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import "./material-components.scss";
+@import "./terminal.scss";
+
+body {
+    margin: 0;
+    background-color: #1E2C2C;
+}
+
+.mdc-layout-grid {
+    width: 75%;
+}
+
+.profile-card {
+    align-items: center;
+    max-width: 256px;
+    height: 450px;
+}
+
+.profile-card-grid {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-card__media {
+    width: 80%;
+    height: 256px;
+    background-image: url('./img/pp.jpg');
+    border-radius: 50%;
+    border-top-right-radius: 50% !important;
+    border-top-left-radius: 50% !important;
+    margin-top: 16px;
+}
+
+.mdc-card-content {
+    padding: 16px;
+}
+
+.profile-card__subtitle {
+    color: rgba(0, 0, 0, .54);
+    color: var(--mdc-theme-text-secondary-on-background, rgba(0, 0, 0, .54));
+}
+
+.profile-card__secondary,
+.profile-card__subtitle {
+    color: rgba(0, 0, 0, .54);
+    color: var(--mdc-theme-text-secondary-on-background, rgba(0, 0, 0, .54));
+}
